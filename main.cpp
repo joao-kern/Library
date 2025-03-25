@@ -1,7 +1,8 @@
 #include <iostream>
-#include "./system.cpp"
+#include "./model/system.cpp"
 
-int main() {
+int main()
+{
     System sys;
     sys.run();
 
