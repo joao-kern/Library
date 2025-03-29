@@ -150,7 +150,6 @@ void System::list_books()
     std::cout << std::endl;
     std::string sql = "SELECT *, CASE WHEN STATUS = 0 THEN 'NOT AVAILABLE' WHEN STATUS = 1 THEN 'AVAILABLE' END AS STATUS_TEXT FROM BOOKS;";
     sqlite3_exec(db, sql.c_str(), callback, 0, 0);
-    std::cout << std::endl;
 };
 
 void System::search_book()
